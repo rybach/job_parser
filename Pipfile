@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+scrapy = "==2.6.*"
+fastapi = "==0.75.0"
+pymongo = "==4.0.*"
+uvicorn = {extras = ["standard"], version = "0.17.*"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+api = "uvicorn api.main:app"
+crawler = "scrapy crawl vacancy"
