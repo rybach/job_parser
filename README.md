@@ -13,15 +13,13 @@ Collected data is stored in mongoDB and has structure:
 ```
 and can be accessed with API. 
 
-# Database settings
-Before start database setting must be specified in `settings.py`.
+# Configuration
+For application launch we need to set DB settings in environment variables:
 ```
-MONGO_DB = {
-   'uri': <uri:port>,
-   'db_name': <db name>
-}
+MONGO_URI=localhost:55000
+MONGO_DBNAME=infostud
 ```
-Collection name will be `vacancies`.
+Default collection name will be `vacancies`. `MAX_ITEM_LIMIT` can also be set with environment variabbles.
 
 # Usage
 Project runs with pipenv.
