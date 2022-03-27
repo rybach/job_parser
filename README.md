@@ -4,11 +4,11 @@ Scrapy project for parsing jobs position information from poslovi.infostud.com. 
 Collected data is stored in mongoDB and has structure:
 ```
 {
-  "title": "Mitarbeiter in der Terminvereinbarung",
-  "employer": "ICM International Call Center Marketing d.o.o.",
-  "address": "Beograd, Niš",
-  "publishing_date": "25.04.2022.",
-  "details": "65.000 - 110.000 RSD (mesečna plata)"
+  "title": "Miung",
+  "employer": "ICting d.o.",
+  "address": "Beo, Niš",
+  "publishing_date": "25.04.2019.",
+  "details": "65.000 RSD (mesečna plata)"
 }
 ```
 and can be accessed with API. 
@@ -44,11 +44,11 @@ Response if positions were found:
   'found': true,
   'positions': [
     {
-      "title": "Mitarbeiter in der Terminvereinbarung",
-      "employer": "ICM International Call Center Marketing d.o.o.",
-      "address": "Beograd, Niš",
-      "publishing_date": "25.04.2022.",
-      "details": "65.000 - 110.000 RSD (mesečna plata)"
+      "title": "Miung",
+      "employer": "ICting d.o.",
+      "address": "Beo, Niš",
+      "publishing_date": "25.04.2019.",
+      "details": "65.000 RSD (mesečna plata)"
     }
   ]
 }
