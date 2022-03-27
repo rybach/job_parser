@@ -4,10 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-scrapy = "==2.6.*"
+scrapy = "==2.6.1"
 fastapi = "==0.75.0"
-pymongo = "==4.0.*"
-uvicorn = {extras = ["standard"], version = "0.17.*"}
+pymongo = "==4.0.2"
+uvicorn = {extras = ["standard"], version = "0.17.6"}
+environs = "*"
 
 [dev-packages]
 
